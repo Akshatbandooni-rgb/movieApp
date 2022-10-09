@@ -1,7 +1,7 @@
 <ng-container *ngIf="bannerCardData">
-  <div class="bannerCard" (mouseover)="showGradient()" (mouseout)="hideGradient()">
+  <div class="bannerCard" [routerLink]="['/moviedetail', bannerCardData.id]">
     <div class="bannerCard-image">
-      <img [src]="imageSizes.medium + bannerCardData.poster_path" [alt]="bannerCardData.title" />
+      <img [src]="imageSizes.medium + bannerCardData.poster_path" [alt]="bannerCardData.title" loading="lazy" />
       <!-- <div class="title" *ngIf="changeText">{{bannerCardData.title}}</div> -->
       <div class="gradient">
         <p>{{bannerCardData.title|truncate :'20'}}</p>

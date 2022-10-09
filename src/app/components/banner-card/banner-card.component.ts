@@ -15,14 +15,4 @@ export class BannerCardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-  public showGradient() {
-    console.log('show');
-
-    this.changeText = true;
-  }
-  public hideGradient() {
-    console.log('hide');
-
-    this.changeText = false;
-  }
 }

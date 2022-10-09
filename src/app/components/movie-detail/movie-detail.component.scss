@@ -1,0 +1,39 @@
+.movie-banner {
+  display: flex;
+  height: 500px;
+  margin: 20px;
+  border-radius: 3px;
+  border: solid 10px white;
+}
+.flx {
+  width: 50%;
+}
+.movie-banner-desc {
+  display: flex;
+  position: relative;
+}
+.movie-banner-img {
+  // object-fit: contain;
+}
+.movie-banner-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.movie-banner-desc-cnt {
+  width: 90%;
+}
+.gradient {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  right: -40px;
+  background-image: linear-gradient(
+    to left,
+    rgba(4, 8, 15, 0),
+    #1e2637,
+    #1e2637
+  );
+  background-image: linear-gradient(to left, transparent, #1e2637, #161e2d);
+  // opacity: 0.99999;
+}
