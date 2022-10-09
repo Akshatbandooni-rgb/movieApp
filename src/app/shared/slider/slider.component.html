@@ -1,0 +1,14 @@
+<div class="slider">
+  <ng-container *ngFor="let movie of movies; let i=index">
+    <div class="slide" *ngIf="i==currentSlideIndex" @slideFade>
+      <div class="slide-bg" [style.background-image]="'url(' + baseMovieUrl +movie.backdrop_path + ')'">
+        <div class="slide-pane">
+          <p class="name">{{movie.title}}</p>
+          <div class="desc mt-6" [style.width]="'70%'">
+            <p>{{movie.overview|truncate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,13 @@
+<ng-container *ngIf="bannerCardData">
+  <div class="bannerCard" (mouseover)="showGradient()" (mouseout)="hideGradient()">
+    <div class="bannerCard-image">
+      <img [src]="imageSizes.medium + bannerCardData.poster_path" [alt]="bannerCardData.title" />
+      <!-- <div class="title" *ngIf="changeText">{{bannerCardData.title}}</div> -->
+      <div class="gradient">
+        <p>{{bannerCardData.title|truncate :'20'}}</p>
+        <p>Rating: {{bannerCardData.vote_average}}/10</p>
+        <p>Released: {{bannerCardData.release_date|date :'yyyy'}}</p>
+      </div>
+    </div>
+  </div>
+</ng-container>

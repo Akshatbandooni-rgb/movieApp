@@ -1,0 +1,57 @@
+@import "../../../styles/colors";
+.material-icons.white {
+  color: white;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(
+    to bottom,
+    $headerLinearGradL,
+    $headerLinerGradR 300px
+  );
+  // background: linear-gradient(to bottom, #192133, #111826);
+  // background: linear-gradient(to bottom, #334366, #334366, #1c2940);
+  .navbar-icon > img {
+    width: 115px;
+    height: 45px;
+    object-fit: contain;
+  }
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-links > li {
+    margin-right: 30px;
+  }
+  .navbar-links > li.active {
+    font-weight: 900;
+    transform: scale(1.25);
+    transition: transform 450ms;
+  }
+  .navbar-links > li > a:hover {
+    cursor: pointer;
+  }
+  .searchbar {
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: -28px;
+      color: #41424c;
+    }
+  }
+  .searchbar > input {
+    border-radius: 20px;
+    height: 35px;
+    border: none;
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+  }
+  .searchbar > input:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="banner-container">
+  <h3 [style.color]="'white'">{{bannerType|uppercase}}</h3>
+  <div class="grid banner-grid">
+    <div class="col-2" *ngFor="let card of bannerCards">
+      <app-banner-card [bannerCardData]="card"></app-banner-card>
+    </div>
+  </div>
+</div>

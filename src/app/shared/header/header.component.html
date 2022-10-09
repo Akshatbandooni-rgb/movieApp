@@ -1,0 +1,17 @@
+<header>
+  <nav class="navbar">
+    <a href="" class="navbar-icon">
+      <img src="assets/images/Logo.svg" alt="" />
+    </a>
+    <ul class="navbar-links">
+      <li [routerLink]="'/'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a>Home</a></li>
+      <li [routerLink]="'/tv'" routerLinkActive="active"><a>TV Shows</a></li>
+      <li [routerLink]="'/movies'" routerLinkActive="active"><a>Movies</a></li>
+      <li [routerLink]="'/trending'" routerLinkActive="active"><a>Trending Now</a></li>
+    </ul>
+    <div class="searchbar">
+      <input type="text" class="search-input" (keydown.enter)="search($event)" placeholder="Search" />
+      <span class="material-icons md-24 white">search</span>
+    </div>
+  </nav>
+</header>
